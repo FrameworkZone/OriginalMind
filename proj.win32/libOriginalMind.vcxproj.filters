@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{910873fb-e135-4417-8785-1f42f54284e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Foundation">
+      <UniqueIdentifier>{642ff777-6103-46a3-b1fa-f4d65a4233f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Network">
+      <UniqueIdentifier>{8f0cf764-20be-4049-b6c1-0e95a0419722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Network\HttpClient">
+      <UniqueIdentifier>{3de90295-7fa3-48b5-ab96-89062b6f15df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Network\AsioTcpClient">
+      <UniqueIdentifier>{68fbca0d-3fa6-4c3d-92e2-e33c705f91c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\Foundation\aes.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\Base64.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\BitStream.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\DataStream.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\Exception.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\Functional.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\Logger.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\Unicode.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Foundation\WorkQueue.cpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Network\HttpClient\HttpClient.cpp">
+      <Filter>Classes\Network\HttpClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Network\TcpClient\AsioNet\TcpConnection.cpp">
+      <Filter>Classes\Network\AsioTcpClient</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\Foundation\aes.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Base64.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\BitStream.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Buffer.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\DataStream.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Endian.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Exception.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Foundation.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\FoundationMacros.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Functional.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Logger.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Math.hpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\md5.hpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\noncopyable.hpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\RandomGenerator.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Runnable.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\sha1.hpp">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Singleton.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\Unicode.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Foundation\WorkQueue.h">
+      <Filter>Classes\Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Network\HttpClient\HttpClient.h">
+      <Filter>Classes\Network\HttpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Network\HttpClient\HttpRequest.h">
+      <Filter>Classes\Network\HttpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Network\HttpClient\HttpResponse.h">
+      <Filter>Classes\Network\HttpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Network\TcpClient\AsioNet\TcpConnection.h">
+      <Filter>Classes\Network\AsioTcpClient</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6894A3F4-B3C2-4515-90AA-CAA70AF0BC11}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libOriginalMind</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../Classes\external\curl\include\win32;$(ProjectDir)../Classes\external\boost_1_55_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)../Classes\external\curl\prebuilt\win32;$(ProjectDir)../Classes\external\boost_1_55_0\stage\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl_imp.lib;libboost_date_time-vc110-mt-gd-1_55.lib;libboost_system-vc110-mt-gd-1_55.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\Foundation\aes.cpp" />
+    <ClCompile Include="..\Classes\Foundation\Base64.cpp" />
+    <ClCompile Include="..\Classes\Foundation\BitStream.cpp" />
+    <ClCompile Include="..\Classes\Foundation\DataStream.cpp" />
+    <ClCompile Include="..\Classes\Foundation\Exception.cpp" />
+    <ClCompile Include="..\Classes\Foundation\Functional.cpp" />
+    <ClCompile Include="..\Classes\Foundation\Logger.cpp" />
+    <ClCompile Include="..\Classes\Foundation\Unicode.cpp" />
+    <ClCompile Include="..\Classes\Foundation\WorkQueue.cpp" />
+    <ClCompile Include="..\Classes\Network\HttpClient\HttpClient.cpp" />
+    <ClCompile Include="..\Classes\Network\TcpClient\AsioNet\TcpConnection.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\Foundation\aes.h" />
+    <ClInclude Include="..\Classes\Foundation\Base64.h" />
+    <ClInclude Include="..\Classes\Foundation\BitStream.h" />
+    <ClInclude Include="..\Classes\Foundation\Buffer.h" />
+    <ClInclude Include="..\Classes\Foundation\DataStream.h" />
+    <ClInclude Include="..\Classes\Foundation\Endian.h" />
+    <ClInclude Include="..\Classes\Foundation\Exception.h" />
+    <ClInclude Include="..\Classes\Foundation\Foundation.h" />
+    <ClInclude Include="..\Classes\Foundation\FoundationMacros.h" />
+    <ClInclude Include="..\Classes\Foundation\Functional.h" />
+    <ClInclude Include="..\Classes\Foundation\Logger.h" />
+    <ClInclude Include="..\Classes\Foundation\Math.hpp" />
+    <ClInclude Include="..\Classes\Foundation\md5.hpp" />
+    <ClInclude Include="..\Classes\Foundation\noncopyable.hpp" />
+    <ClInclude Include="..\Classes\Foundation\RandomGenerator.h" />
+    <ClInclude Include="..\Classes\Foundation\Runnable.h" />
+    <ClInclude Include="..\Classes\Foundation\sha1.hpp" />
+    <ClInclude Include="..\Classes\Foundation\Singleton.h" />
+    <ClInclude Include="..\Classes\Foundation\Unicode.h" />
+    <ClInclude Include="..\Classes\Foundation\WorkQueue.h" />
+    <ClInclude Include="..\Classes\Network\HttpClient\HttpClient.h" />
+    <ClInclude Include="..\Classes\Network\HttpClient\HttpRequest.h" />
+    <ClInclude Include="..\Classes\Network\HttpClient\HttpResponse.h" />
+    <ClInclude Include="..\Classes\Network\TcpClient\AsioNet\TcpConnection.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

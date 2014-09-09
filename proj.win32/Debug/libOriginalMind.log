@@ -1,0 +1,28 @@
+﻿生成启动时间为 2014/9/4 12:21:07。
+     1>项目“E:\LiboSharedProjects\OriginalMind\proj.win32\libOriginalMind.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\libOriginalMind.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IE:\LiboSharedProjects\OriginalMind\proj.win32\../Classes\external\curl\include\win32 /IE:\LiboSharedProjects\OriginalMind\proj.win32\../Classes\external\boost_1_55_0 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Classes\Foundation\WorkQueue.cpp
+         WorkQueue.cpp
+       Lib:
+         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"E:\LiboSharedProjects\OriginalMindTest\OriginalMindTest\Debug\libOriginalMind.lib" libcurl_imp.lib "libboost_date_time-vc110-mt-gd-1_55.lib" "libboost_system-vc110-mt-gd-1_55.lib" /LIBPATH:E:\LiboSharedProjects\OriginalMind\proj.win32\../Classes\external\curl\prebuilt\win32 /LIBPATH:E:\LiboSharedProjects\OriginalMind\proj.win32\../Classes\external\boost_1_55_0\stage\win32 /NOLOGO Debug\aes.obj
+         Debug\Base64.obj
+         Debug\BitStream.obj
+         Debug\DataStream.obj
+         Debug\Exception.obj
+         Debug\Functional.obj
+         Debug\Logger.obj
+         Debug\Unicode.obj
+         Debug\WorkQueue.obj
+         Debug\HttpClient.obj
+         Debug\TcpConnection.obj
+         libOriginalMind.vcxproj -> E:\LiboSharedProjects\OriginalMindTest\OriginalMindTest\Debug\libOriginalMind.lib
+       FinalizeBuildStatus:
+         正在删除文件“Debug\libOriginalMind.unsuccessfulbuild”。
+         正在对“Debug\libOriginalMind.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\LiboSharedProjects\OriginalMind\proj.win32\libOriginalMind.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.44
