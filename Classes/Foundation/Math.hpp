@@ -1,4 +1,9 @@
+/****************************************************************************
+  Copyright (c) 2014-2015 libo.
+ 
+  losemymind.libo@gmail.com
 
+****************************************************************************/
 #ifndef Foundation_Math_h
 #define Foundation_Math_h
 #pragma  once

@@ -12,6 +12,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <regex>
 
 namespace Foundation{
 
@@ -71,6 +72,38 @@ namespace Foundation{
     std::vector<std::string> &split(const std::string &s, char delim, std::vector<std::string> &elems);
 
     std::vector<std::string> split(const std::string &s, char delim);
+
+    template< typename ContainerDest, typename ContainerSource>
+    void containerAppend(ContainerDest& dest, ContainerSource& source, size_t index, size_t count)
+    {
+        typename ContainerSource::iterator begin = source.begin();
+        std::advance(begin, index);
+        typename ContainerSource::iterator end = begin;
+        std::advance(end, count);
+        dest.resize(dest.size() + count);
+        std::copy_backward(begin, end, dest.end());
+    }
+
+    template< typename T >
+    void tokenize( const std::string& str, std::vector< T >& tokens, const std::string delimiters )
+    {
+        std::regex splitPattern(delimiters); 
+
+        std::sregex_token_iterator i(str.begin(), str.end(), splitPattern, -1); 
+        std::sregex_token_iterator end; 
+
+        for(; i != end; i++)
+        {
+            if( (*i).matched)
+            {
+                T temp; 
+                std::stringstream inStream(*i); 
+                inStream >> temp; 
+                tokens.push_back(temp);
+            }
+        }
+    }
+
 
     } //namespace Functional
 } //namespace Foundation
