@@ -13,6 +13,7 @@
 #include <sstream>
 #include <vector>
 #include <regex>
+#include <iomanip>
 
 namespace Foundation{
 
